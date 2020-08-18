@@ -4,32 +4,14 @@
     "description": "Enable the View | Message Body As | All Body Parts message display mode.",
     "author": "Jonathan Kamens",
     "homepage_url": "https://addons.mozilla.org/thunderbird/addon/show-all-body-parts/",
-
-
-
-    "experiment_apis":{
-
-        "sabp_bgrndAPI":{
-            "schema":"schema.json",
-            "parent":{
-                "scopes":["addon_parent"],
-                "script":"background-implementation.js",
-                "paths":[["sabp_bgrndAPI"]]
-            }
-        }
+    "legacy": {
+        "type": "bootstrap"
     },
-
-    "background":{
-        "scripts":[
-             "background.js"
-        ]
-      },
-
     "applications": {
         "gecko": {
             "id": "ShowAllBodyParts@kamens.us",
             "strict_min_version": "68.0a1",
-            "strict_max_version": "80.*"
+            "strict_max_version": "71.*"
         }
     },
     "manifest_version": 2

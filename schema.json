@@ -1,0 +1,72 @@
+[
+    {
+        "namespace":"sabp_bgrndAPI",
+        "functions":[
+            {
+                "name":"OnStartup",
+                "type":"function",
+                "desription":"on startup",
+                "async":true,
+                "parameters":[]
+            },
+            {
+                "name":"OnInitialize",
+                "type":"function",
+                "desription":"on startup",
+                "async":true,
+                "parameters":[]
+            },
+
+
+            {
+                "name":"Oninstalled",
+                "type":"function",
+                "desription":"on installed",
+                "async":true,
+                "parameters":[]
+            },
+
+            {
+                "name":"getBoolPref",
+                "type":"function",
+                "desription":"get the BoolPref value",
+                "async":true,
+                "parameters":
+                [
+                    {
+                        "name":"pref",
+                        "type":"string",
+                        "Description":"value"
+                    }
+
+                ]
+            },
+
+
+
+            {
+                "name":"setBoolPref",
+                "type":"function",
+                "desription":"set the BoolPref value",
+                "async":true,
+                "parameters":
+                [
+                    {
+                        "name":"pref",
+                        "type":"string",
+                        "Description":"value"
+                    },
+                    {
+                        "name":"elt_value",
+                        "type":"boolean",
+                        "Description":"value"
+                    }
+
+                ]
+            }
+
+
+        ]
+            }
+
+]
